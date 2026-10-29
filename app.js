@@ -81,7 +81,7 @@ function badge(s){return '<span class="badge">'+{draft:"Not started",open:"Votin
 /* ---------- VOTER ---------- */
 function voterV(){
  if(B)return ballotV();
- var h='<div class="card"><h2>Welcome</h2><p class="mut">'+esc(St.title)+' &nbsp;'+badge(St.status)+'</p>';
+ var h='<div class="card"><h2>Welcome </h2><p class="mut">'+esc(St.title)+' &nbsp;'+badge(St.status)+'</p>';
  if(St.status=="closed")h+='<button class="p w" onclick="resultsV()">View election results</button>';
  h+='</div><div class="card"><h3>Log in to vote</h3><p class="mut">Enter the same details you registered with.</p>'+M()+
  '<label class="f">Full name</label><input id="n" autocomplete="name" placeholder="e.g. Alice Namukasa"><label class="f">Year of study</label><input id="e" inputmode="numeric" maxlength="4" placeholder="e.g. 2024"><div class="mut" style="margin-top:4px">4-digit year, for example 2024</div><label class="f">Phone number</label><input id="p" type="tel" autocomplete="tel" placeholder="e.g. 0772 000 001"><button class="p w" id="lb" onclick="login()">Continue</button></div>';
